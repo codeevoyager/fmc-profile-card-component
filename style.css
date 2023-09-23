@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/bg-pattern-bottom.svg) bottom -700px right -300px no-repeat, url(../images/bg-pattern-top.svg) top -600px left -400px no-repeat;
+    background-color:hsl(185, 75%, 39%);
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: Kumbh Sans;
+}
+
+.card{
+    height: 70vh;
+    width: 350px;
+}
+
+.card_top{
+    height: 35%;
+    width: 100%;
+    background: url(./images/bg-pattern-card.svg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_content{
+    height: 45%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+
+.card_content .profile_pic{
+    background: url(./images/image-victor.jpg);
+    position: absolute;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    top: -50px;
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+}
+
+.card_content .profile_info{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_info span,
+.profile_info p,
+.footer_col p{
+    opacity: 70%;
+}
+
+.profile_info span{
+    padding-left: 10px;
+}
+
+.card_footer{
+    height: 20%;
+    width: 100%;
+    font-size: 0.7em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    font-weight: 100;
+    padding: 0 40px;
+
+}
+
+.card_footer .footer_col{
+    text-align: center;
+}
+
+.footer_col p{
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 576px){
+    body{
+    background: url(../images/bg-pattern-bottom.svg) bottom -700px right -600px no-repeat, url(../images/bg-pattern-top.svg) top -700px left -600px no-repeat;
+    background-color:hsl(185, 75%, 39%);
+    }
+
+}
+
